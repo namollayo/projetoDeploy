@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Index 🌸</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
+    <link rel ="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="week1.js"></script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;700&family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+        </style>
+</head>
+    <body>
+        
+        <header>
+            <div class="nav">
+                <div id="logo">
+                    <a href="#Home"><img src="./assets/Logo.png" alt="Game Logo"></a>
+                </div>
+                <div id="navItens">
+                    <span class="navItem"><a href="#Home"> Home </span></a>
+                    <span> | </span>
+                    <span class="navItem"><a href="#charactersList"> Characters </a></span>
+                    <span> | </span>
+                    <span class="navItem"><a href = https://genshin.hoyoverse.com/pt/home target="_blank"> Official Website </a></span>
+                </div>
+            </div>
+        </header>
+        <main id="Home">
+            <div class="telaPrincipal">
+                <h1>Welcome to<br>
+                    Genshin Index</h1>
+            </div>   
+            <section class="charactersList" id="charactersList">                
+                <div class = "search">
+                    <div class="searchAndFilter">
+                        <div class="searchBar">
+                            <input id = "searchingInput" type="text" placeholder="Who are you looking for?" onkeypress="writtenSearchEnter(event)">
+                            <button id="searchButton"onclick="writtenSearch(event)"><img src="./assets/searchicon.png" id="searchIcon"> </button>
+                        </div>
+                        <div class="offFilter">   
+                            <img src="./assets/iconFilter.png" onclick=createCharacterListCards(arrayOfCharacters) id="offFilter" alt = "None Vision Symbol" class="typeSearch" id="0">
+                        </div>      
+                    </div>        
+                    <div class="elementButtons">
+                        <img src="./assets/icon1.png" onclick=elementSearch(event) alt = "Anemo Vision Symbol" class="typeSearch" id="1">
+                        <img src="./assets/icon2.png" onclick=elementSearch(event) alt = "Cryo Vision Symbol" class="typeSearch" id="2">
+                        <img src="./assets/icon3.png" onclick=elementSearch(event) alt = "Electro Vision Symbol" class="typeSearch" id="3">
+                        <img src="./assets/icon4.png" onclick=elementSearch(event) alt = "Geo Vision Symbol" class="typeSearch" id="4">
+                        <img src="./assets/icon5.png" onclick=elementSearch(event) alt = "Hydro Vision Symbol" class="typeSearch" id="5">
+                        <img src="./assets/icon6.png" onclick=elementSearch(event) alt = "Pyro Vision Symbol" class="typeSearch" id="6">
+                        <img src="./assets/icon7.png" onclick=elementSearch(event) alt = "Dendro Vision Symbol" class="typeSearch" id="7">
+                        <img src="./assets/iconNonee.png" onclick=elementSearch(event) alt = "None Vision Symbol" class="typeSearch" id="0"> 
+                    </div>
+                </div>
+                <p id="Characters">List of Characters</p>
+                <div class="cardsContainer" id="cardsContainer">
+                    <!-- Below is the HTML model of the Characters Card that are executed and generated in the DOM
+                    <div class="card">
+                        <img src="./assets/notPlayable.png" class = "isPlayable"> 
+                        <img src="./assets/characters/characterAlhaitham.png" alt="Alhaitham profile picture" class = "img">
+                                           
+                        <div class="content">
+                            <div class="title">
+                                <h3>Alhaitham</h3>
+                                <img src="./assets/icon7.png" alt = "Dendro Vision Symbol" class="type id = "7">
+                            </div>
+                            <img src="./assets/5star2.png" class = "rarity">                         
+                                 
+                                                   
+                         <p class = "details"> <b>Region:</b> Sumeru <br>
+                                <b>Weapon:</b> Sword <br>
+                                <b>Affiliation:</b><span> Haravatat, Sumeru Akademiya.</span></p>                             
+                        </div>
+                    </div>       -->
+            </section> 
+        </main>
+        </div>
+        <footer>
+           <a href="https://www.hoyoverse.com/" target="_blank"><img src ="https://webstatic.hoyoverse.com/upload/event/2021/12/29/eaa64d81ae6a7318a6afb91cbffd83a4_118924438105936743.png" id="hoyoLogo"></a>
+           <p>Copyright © COGNOSPHERE. All Rights Reserved.</p>
+           <span> Website developed for educational purposes as an activity of the<a href="https://www.labenu.com.br" target="_blank" id="Labenu"> Labenu Full Stack course </a></span>
+           <div class="contact">
+                <p>by Gabriela Carrara</p>
+                <a href="https://github.com/namollayo" target="_blank"><img src="./assets/githubLogo.png" alt="GitHub Logo" id="contactLogo"></a>
+                <a href="https://www.linkedin.com/in/gabrielascarrara/" target="_blank"><img src="./assets/kedinLogo.jpg" alt="Linkedin Logo" id="contactLogo"></a>
+            </div>
+        </footer>
+    </body>
+</html>
